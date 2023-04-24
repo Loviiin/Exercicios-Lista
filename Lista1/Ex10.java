@@ -2,17 +2,18 @@ package Lista1;
 import java.util.Scanner;
 public class Ex10 {
     public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
-        System.out.println("Qual o seu salário");
-        int salario = x.nextInt();
-        int novosalario = 0;
-        if(salario<= 300 ){
-        novosalario = salario+(salario/2);
-        System.out.println(novosalario);
-        }
-        else{
-        novosalario = salario+(salario*30)/100;
-        System.out.println(novosalario);
+        try (Scanner x = new Scanner(System.in)) {
+          System.out.println("Qual o seu salário");
+          int salario = x.nextInt();
+          int novosalario = 0;
+          if(salario<= 300 ){
+          novosalario = salario+(salario/2);
+          System.out.println(novosalario);
+          }
+          else{
+          novosalario = salario+(salario*30)/100;
+          System.out.println(novosalario);
+          }
         }  
     }    
 }
