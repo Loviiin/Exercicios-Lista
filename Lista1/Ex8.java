@@ -1,3 +1,4 @@
+package Lista1;
 /*class Media{
     public static float media(Float x,Float y, Float z, Float h) {
         return (x+y+z+h)/4;     
